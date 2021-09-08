@@ -1,1 +1,1 @@
-# rsschool-cv
+https://emeraldboar.github.io/rsschool-cv/cv
