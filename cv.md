@@ -1,4 +1,4 @@
-# Konstantin Kozlov 
+# Konstantin Kozlov
 __Junior Front-End Developer__
 ## Contacts
 |||
@@ -9,3 +9,7 @@ __Junior Front-End Developer__
 
 ## About me
 Hello! I am a junior front-end developer. I have a weakness for high-quality and intuitive interfaces.
+
+> "Bad programmers worry about the code. Good programmers worry about data structures and their relationships." [Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)
+
+
