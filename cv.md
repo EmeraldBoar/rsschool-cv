@@ -21,7 +21,6 @@ Hello! I am a junior front-end developer. I have a weakness for high-quality and
 - __Git__
 - __Gulp__
 - __BEM__
-
 ## Code Example
 
 ```sh
@@ -45,3 +44,9 @@ function binarySearch (list, item) {
   return 'Значения не существует'
 };
 ```
+
+## Education
+
+- [HTML Academy](https://htmlacademy.ru/)
+- [Udemy (JavaScript)](https://www.udemy.com/course/javascript_full/)
+- [Hexlet (JavaScript)](https://ru.hexlet.io/categories/javascript/courses)
