@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <title>CV</title>
+</head>
+
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <button class="page-header__button button"></button>
+      <nav class="page-header__navigation main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#about">About Me</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#hardskills">Hard Skills</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#codeexample">Code Example</a>
+          </li>
+          <li class="main-navigation__item">
+            <a class="main-navigation__link" href="#education">Education</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Kozlov Konstantin CV</h1>
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title title" id="about">About me</h2>
+          <div class="about__wrapper">
+            <div class="about__column about__column--left">
+              <img class="about__photo" width="200" height="200" src="./img/29514257.jpeg" alt="">
+            </div>
+            <div class="about__column about__column--right">
+              <p class="about_text">Hello! I am a junior front-end developer. I have a weakness for high-quality and
+                intuitive
+                interfaces.</p>
+              <div class="about__blockquote">
+                <blockquote class="about__quote">“Bad programmers worry about the code. Good programmers
+                  worry
+                  about data structures and
+                  their relationships.”</blockquote>
+                <a class="about__cite" href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="container">
+          <h2 class="contacts__title title" id="contacts">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <span class="contacts__subtitle">Email</span>
+              <a class="contacts__link" href="mailto:kozlovkv174@gmail.com">kozlovkv174@gmail.com</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__subtitle">GitHub</span>
+              <a class="contacts__link" href="https://github.com/EmeraldBoar">EmeraldBoar</a>
+            </li>
+            <li class="contacts__item">
+              <span class="contacts__subtitle">Telegram</span>
+              <a class="contacts__link" href="https://t.me/fariarbe">@fariarbe</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="hard-skills">
+        <div class="container">
+          <h2 class="hard-skills__title title" id="hardskills">Hard Skills</h2>
+          <ul class="hard-skills__list">
+            <li class="hard-skills__item">HTML</li>
+            <li class="hard-skills__item">CSS</li>
+            <li class="hard-skills__item">JavaScript</li>
+            <li class="hard-skills__item">Sass / Scss</li>
+            <li class="hard-skills__item">Git</li>
+            <li class="hard-skills__item">Gulp</li>
+            <li class="hard-skills__item">BEM</li>
+          </ul>
+        </div>
+      </section>
+      <section class="code-example">
+        <div class="container">
+          <h2 class="code-example__title title" id="codeexample">Code Example</h2>
+          <div class="code-example__wrapper">
+            <pre><code>function binarySearch (list, item) {
+              let low = 0,
+                high = list.length - 1,
+                mid = Math.floor((low + high) / 2),
+                guess = list[mid];
+              while(low &lt;= high){
+                mid = low + high;
+                guess = list[mid];
+                if(guess === item){
+                  return mid;
+                }
+                if(guess &gt; item){
+                  high = mid - 1;
+                } else {
+                  low = mid +1;
+                }
+              }
+              return 'Значения не существует'
+            };</code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="education">
+        <div class="container">
+          <h2 class="education__title title" id="education">Education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <a class="education__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+            <li class="education__item">
+              <a class="education__link" href="https://www.udemy.com/course/javascript_full/">Udemy (JavaScript)</a>
+            </li>
+            <li class="education__item">
+              <a class="education__link" href="https://ru.hexlet.io/categories/javascript/courses">Hexlet
+                (JavaScript)</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="languages">
+        <div class="container">
+          <h2 class="languages__title title">Languages</h2>
+          <p class="languages__item">English A2</p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <span class="page-footer__date">Konstantin Kozlov 2021</span>
+      <ul class="page-footer__contacts">
+        <li class="page-footer__contacts-item">
+          <a class="page-footer__contacts-link" href="mailto:kozlovkv174@gmail.com">
+            <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM10 23.9603C10 16.2626 16.2802 10 23.9998 10C31.7194 10 37.9997 16.2626 37.9997 23.9603C37.9997 25.0508 37.9087 25.9336 37.7048 26.8197L37.7018 26.8344C37.7013 26.837 37.6001 27.2455 37.5442 27.4237C37.1982 28.5272 36.5718 29.4463 35.7325 30.0815C34.9186 30.6977 33.9094 31.0371 32.891 31.0371C32.7652 31.0371 32.6385 31.032 32.5144 31.0221C31.0682 30.9063 29.7966 30.1474 29.0168 28.9373C27.6757 30.282 25.8964 31.0218 23.9998 31.0218C20.0951 31.0218 16.9184 27.854 16.9184 23.9603C16.9184 20.0666 20.0951 16.8989 23.9998 16.8989C27.9045 16.8989 31.0812 20.0666 31.0812 23.9603V26.2366C31.087 27.5648 31.9808 28.1077 32.7444 28.1691C33.5041 28.2276 34.5152 27.7863 34.8674 26.3461C35.0411 25.5562 35.1294 24.7533 35.1294 23.9603C35.1294 17.8407 30.1367 12.8621 23.9998 12.8621C17.8629 12.8621 12.8703 17.8407 12.8703 23.9603C12.8703 30.0798 17.8629 35.0585 23.9998 35.0585C26.136 35.0585 28.2136 34.4501 30.0079 33.2991L30.0401 33.2784L31.9261 35.465L31.8856 35.4926C29.5549 37.0811 26.828 37.9207 23.9998 37.9207C16.2802 37.9207 10 31.6581 10 23.9603Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.2108 23.9602C28.2108 26.2757 26.3217 28.1595 23.9998 28.1595C21.6777 28.1595 19.7887 26.2757 19.7887 23.9602C19.7887 21.6448 21.6777 19.7611 23.9998 19.7611C26.3217 19.7611 28.2108 21.6448 28.2108 23.9602Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__contacts-item">
+          <a class="page-footer__contacts-link" href="https://github.com/EmeraldBoar"><svg width="48" height="48"
+              viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24.0432 0.179932C10.8147 0.179932 0.0876465 11.0878 0.0876465 24.5445C0.0876465 35.3096 6.95165 44.4426 16.4699 47.6643C17.6672 47.8899 18.1067 47.1358 18.1067 46.4922C18.1067 45.9112 18.0845 43.9919 18.0742 41.956C11.4097 43.4299 10.0034 39.0812 10.0034 39.0812C8.9137 36.265 7.34358 35.5161 7.34358 35.5161C5.17009 34.0039 7.50742 34.035 7.50742 34.035C9.91297 34.2065 11.1796 36.5458 11.1796 36.5458C13.3162 40.2707 16.7837 39.1938 18.1507 38.5712C18.3657 36.9969 18.9866 35.9212 19.6716 35.3132C14.3508 34.6971 8.7574 32.6079 8.7574 23.2719C8.7574 20.6118 9.6932 18.4383 11.2256 16.732C10.9769 16.1179 10.1569 13.6402 11.4577 10.2841C11.4577 10.2841 13.4693 9.62928 18.0472 12.7816C19.9581 12.2418 22.0074 11.971 24.0432 11.9618C26.0791 11.971 28.13 12.2418 30.0444 12.7816C34.6167 9.62928 36.6256 10.2841 36.6256 10.2841C37.9295 13.6402 37.1091 16.1179 36.8604 16.732C38.3964 18.4383 39.3259 20.6118 39.3259 23.2719C39.3259 32.6301 33.7218 34.6906 28.3874 35.2938C29.2467 36.0499 30.0123 37.5327 30.0123 39.8059C30.0123 43.0655 29.9845 45.6893 29.9845 46.4922C29.9845 47.1406 30.4157 47.9003 31.63 47.6611C41.1431 44.4357 47.9984 35.3059 47.9984 24.5445C47.9984 11.0878 37.273 0.179932 24.0432 0.179932Z" />
+              <path
+                d="M9.16085 35.1623C9.10809 35.2838 8.92085 35.3197 8.75027 35.2366C8.57652 35.1571 8.47893 34.9921 8.53526 34.8706C8.58683 34.746 8.77447 34.7117 8.94782 34.7944C9.12197 34.8743 9.22115 35.0409 9.16085 35.1623Z" />
+              <path
+                d="M10.1312 36.263C10.0169 36.3707 9.79358 36.3207 9.64205 36.1504C9.48535 35.9806 9.456 35.7534 9.57183 35.6441C9.68965 35.5363 9.90624 35.5868 10.0633 35.7566C10.22 35.9285 10.2506 36.1541 10.1312 36.263Z" />
+              <path
+                d="M11.0757 37.6662C10.929 37.7699 10.689 37.6726 10.5406 37.456C10.3938 37.2393 10.3938 36.9795 10.5438 36.8754C10.6925 36.7713 10.929 36.8649 11.0793 37.0799C11.2257 37.2998 11.2257 37.5601 11.0757 37.6662Z" />
+              <path
+                d="M12.3696 39.0219C12.2383 39.1692 11.9587 39.1297 11.754 38.9287C11.5445 38.7322 11.4862 38.4534 11.6179 38.3062C11.7508 38.1585 12.0321 38.2001 12.2383 38.3994C12.4462 38.5955 12.5097 38.8763 12.3696 39.0219Z" />
+              <path
+                d="M14.1548 39.8091C14.0969 40 13.8275 40.0867 13.5562 40.0056C13.2852 39.9221 13.1079 39.6986 13.1626 39.5057C13.219 39.3137 13.4895 39.2233 13.7628 39.31C14.0334 39.3932 14.2111 39.6151 14.1548 39.8091Z" />
+              <path
+                d="M16.1152 39.9551C16.122 40.156 15.8919 40.3227 15.6071 40.3259C15.3207 40.3327 15.089 40.1701 15.0858 39.9724C15.0858 39.7695 15.3107 39.6045 15.5972 39.5996C15.882 39.594 16.1152 39.7554 16.1152 39.9551Z" />
+              <path
+                d="M17.9397 39.6392C17.9738 39.8353 17.7759 40.0366 17.493 40.0899C17.2149 40.1419 16.9575 40.0209 16.9222 39.8264C16.8877 39.6255 17.0892 39.4241 17.3669 39.3721C17.6501 39.3221 17.9036 39.4399 17.9397 39.6392Z" />
+            </svg></a>
+        </li>
+        <li class="page-footer__contacts-item">
+          <a class="page-footer__contacts-link" href="https://t.me/fariarbe"><svg width="48" height="48"
+              viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0C10.7452 0 0 10.7452 0 24ZM19.6 35L20.0083 28.8823L20.008 28.882L31.1369 18.839C31.6253 18.4055 31.0303 18.1941 30.3819 18.5873L16.6473 27.2523L10.7147 25.4007C9.4335 25.0084 9.4243 24.128 11.0023 23.4951L34.1203 14.5809C35.1762 14.1015 36.1953 14.8345 35.7922 16.4505L31.8552 35.0031C31.5803 36.3215 30.7837 36.6368 29.68 36.0278L23.6827 31.5969L20.8 34.4C20.7909 34.4088 20.7819 34.4176 20.7729 34.4264C20.4505 34.7403 20.1837 35 19.6 35Z" />
+            </svg></a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://rs.school/js/">
+          <svg width="100" height="80" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 552.8 205.3">
+            <style>
+              .st0 {
+                fill: #fff
+              }
+
+              .st1 {
+                clip-path: url(#SVGID_2_)
+              }
+
+              .st2 {
+                clip-path: url(#SVGID_4_)
+              }
+
+              .st3 {
+                clip-path: url(#SVGID_6_)
+              }
+
+              .st4 {
+                clip-path: url(#SVGID_8_)
+              }
+
+              .st5 {
+                fill: #fff;
+                stroke: #0E51A7;
+                stroke-width: 4;
+                stroke-miterlimit: 10
+              }
+
+              .st6 {
+                clip-path: url(#SVGID_8_)
+              }
+
+              .st6,
+              .st7 {
+                fill: none;
+                stroke: #0E51A7;
+                stroke-width: 4;
+                stroke-miterlimit: 10
+              }
+
+              .st8,
+              .st9 {
+                clip-path: url(#SVGID_10_)
+              }
+
+              .st9 {
+                fill: none;
+                stroke: #0E51A7;
+                stroke-width: 4;
+                stroke-miterlimit: 10
+              }
+            </style>
+            <title>rs_school_js</title>
+            <path
+              d="M285.4 68l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.9 3.6 6.9 5.4 12.2 5.4 3.9 0 7-.9 9.1-2.8 2-1.5 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.1-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4 6 4.2 9.6 11 10.7 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8s-5.3-2.8-9.2-2.8c-3.2 0-5.6.7-7.2 2-1.5 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.5 13.3 0 5.6-1.6 11.2-4.8 15.9-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8S286.1 77 285.4 68zM6.3 97.6V8.2h46.1c8.5 0 15.1.7 19.6 2.2 4.4 1.4 8.3 4.3 10.9 8.2 2.9 4.3 4.3 9.3 4.2 14.5.3 8.8-4.2 17.2-11.9 21.6-3 1.7-6.3 2.9-9.7 3.5 2.5.7 5 1.9 7.2 3.3 1.7 1.4 3.1 3 4.4 4.7 1.5 1.7 2.8 3.6 3.9 5.6l13.4 25.9H63L48.2 70.2c-1.9-3.5-3.5-5.8-5-6.9-2-1.4-4.4-2.1-6.8-2.1H34v36.3H6.3zM34 44.4h11.7c2.5-.2 4.9-.6 7.3-1.2 1.8-.3 3.4-1.3 4.5-2.8 2.7-3.6 2.3-8.7-1-11.8-1.8-1.5-5.3-2.3-10.3-2.3H34v18.1zM0 174.2l26.3-1.7c.6 4.3 1.7 7.5 3.5 9.8 2.8 3.6 6.9 5.5 12.2 5.5 3.9 0 7-.9 9.1-2.8 2-1.6 3.2-3.9 3.2-6.4 0-2.4-1.1-4.7-3-6.2-2-1.8-6.7-3.6-14.2-5.2-12.1-2.7-20.8-6.3-25.9-10.9-5.1-4.3-8-10.6-7.8-17.3 0-4.6 1.4-9.2 4-13 3-4.3 7.1-7.7 12-9.6 5.3-2.3 12.7-3.5 22-3.5 11.4 0 20.1 2.1 26.1 6.4s9.5 11 10.6 20.3l-26 1.5c-.7-4-2.1-6.9-4.4-8.8-2.2-1.9-5.3-2.8-9.2-2.7-3.2 0-5.6.7-7.2 2.1-1.6 1.2-2.5 3-2.4 5 0 1.5.8 2.9 2 3.8 1.3 1.2 4.4 2.3 9.3 3.3 12.1 2.6 20.7 5.2 26 7.9 5.3 2.7 9.1 6 11.4 9.9 2.4 4 3.6 8.6 3.6 13.2 0 5.6-1.7 11.1-4.8 15.8-3.3 4.9-7.9 8.7-13.3 11-5.7 2.5-12.9 3.8-21.5 3.8-15.2 0-25.7-2.9-31.6-8.8-5.9-6-9.2-13.4-10-22.4z" />
+            <path
+              d="M133 167.2l24.2 7.3c-1.3 6.1-4 11.9-7.7 17-3.4 4.5-7.9 8-13 10.3-5.2 2.3-11.8 3.5-19.8 3.5-9.7 0-17.7-1.4-23.8-4.2-6.2-2.8-11.5-7.8-16-14.9-4.5-7.1-6.7-16.2-6.7-27.3 0-14.8 3.9-26.2 11.8-34.1s19-11.9 33.4-11.9c11.3 0 20.1 2.3 26.6 6.8 6.4 4.6 11.2 11.6 14.4 21l-24.4 5.4c-.6-2.1-1.5-4.2-2.7-6-1.5-2.1-3.4-3.7-5.7-4.9-2.3-1.2-4.9-1.7-7.5-1.7-6.3 0-11.1 2.5-14.4 7.6-2.5 3.7-3.8 9.6-3.8 17.6 0 9.9 1.5 16.7 4.5 20.4 3 3.7 7.2 5.5 12.7 5.5 5.3 0 9.3-1.5 12-4.4 2.7-3.1 4.7-7.4 5.9-13zm56.5-52.8h27.6v31.3h30.2v-31.3h27.8v89.4h-27.8v-36.2h-30.2v36.2h-27.6v-89.4z" />
+            <path
+              d="M271.3 159.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.3 4 34.4 12S364 144 364 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8s4.9-10.8 4.9-20.8c0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5zm93.4-.1c0-14.6 4.1-26 12.2-34.1 8.1-8.1 19.5-12.2 34-12.2 14.9 0 26.4 4 34.4 12S485 144 485 158.4c0 10.5-1.8 19-5.3 25.7-3.4 6.6-8.7 12-15.2 15.6-6.7 3.7-15 5.6-24.9 5.6-10.1 0-18.4-1.6-25-4.8-6.8-3.4-12.4-8.7-16.1-15.2-4.1-7-6.2-15.7-6.2-26.2zm27.6.1c0 9 1.7 15.5 5 19.5 3.3 3.9 7.9 5.9 13.7 5.9 5.9 0 10.5-1.9 13.8-5.8 3.3-3.9 4.9-10.8 4.9-20.8 0-8.4-1.7-14.6-5.1-18.4-3.4-3.9-8-5.8-13.8-5.8-5.1-.2-10.1 2-13.4 5.9-3.4 3.9-5.1 10.4-5.1 19.5z" />
+            <path d="M482.1 114.4h27.6v67.4h43.1v22H482v-89.4z" />
+            <ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63" ry="51.8" />
+            <defs>
+              <ellipse id="SVGID_1_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63" ry="51.8" />
+            </defs>
+            <clipPath id="SVGID_2_">
+              <use xlink:href="#SVGID_1_" overflow="visible" />
+            </clipPath>
+            <g class="st1">
+              <path transform="rotate(-37.001 420.82 68.353)" class="st0" d="M330.9-14.2h179.8v165.1H330.9z" />
+              <g id="Layer_2_1_">
+                <defs>
+                  <path id="SVGID_3_" transform="rotate(-37.001 420.82 68.353)" d="M330.9-14.2h179.8v165.1H330.9z" />
+                </defs>
+                <clipPath id="SVGID_4_">
+                  <use xlink:href="#SVGID_3_" overflow="visible" />
+                </clipPath>
+                <g id="Layer_1-2" class="st2">
+                  <ellipse transform="rotate(-37.001 420.46 67.88)" class="st0" cx="420.5" cy="67.9" rx="63"
+                    ry="51.8" />
+                  <defs>
+                    <ellipse id="SVGID_5_" transform="rotate(-37.001 420.46 67.88)" cx="420.5" cy="67.9" rx="63"
+                      ry="51.8" />
+                  </defs>
+                  <clipPath id="SVGID_6_">
+                    <use xlink:href="#SVGID_5_" overflow="visible" />
+                  </clipPath>
+                  <g class="st3">
+                    <path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z" />
+                    <defs>
+                      <path id="SVGID_7_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                    </defs>
+                    <clipPath id="SVGID_8_">
+                      <use xlink:href="#SVGID_7_" overflow="visible" />
+                    </clipPath>
+                    <g class="st4">
+                      <ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63"
+                        ry="51.8" />
+                    </g>
+                    <path transform="rotate(-37 420.799 68.802)" class="st6" d="M357.8 17h125.9v103.7H357.8z" />
+                    <ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63"
+                      ry="51.8" />
+                    <path transform="rotate(-37 420.799 68.802)" class="st0" d="M357.8 17h125.9v103.7H357.8z" />
+                    <defs>
+                      <path id="SVGID_9_" transform="rotate(-37 420.799 68.802)" d="M357.8 17h125.9v103.7H357.8z" />
+                    </defs>
+                    <clipPath id="SVGID_10_">
+                      <use xlink:href="#SVGID_9_" overflow="visible" />
+                    </clipPath>
+                    <g class="st8">
+                      <ellipse transform="rotate(-37.001 420.46 67.88)" class="st5" cx="420.5" cy="67.9" rx="63"
+                        ry="51.8" />
+                    </g>
+                    <path transform="rotate(-37 420.799 68.802)" class="st9" d="M357.8 17h125.9v103.7H357.8z" />
+                    <path transform="rotate(-37.001 420.82 68.353)" class="st7" d="M330.9-14.2h179.8v165.1H330.9z" />
+                  </g>
+                  <ellipse transform="rotate(-37.001 420.46 67.88)" class="st7" cx="420.5" cy="67.9" rx="63"
+                    ry="51.8" />
+                  <path
+                    d="M392.4 61.3l10-7 12.3 17.5c2.1 2.8 3.7 5.8 4.9 9.1.7 2.5.5 5.2-.5 7.6-1.3 3-3.4 5.5-6.2 7.3-3.3 2.3-6.1 3.6-8.5 4-2.3.4-4.7 0-6.9-1-2.4-1.2-4.5-2.9-6.1-5.1l8.6-8c.7 1.1 1.6 2.1 2.6 2.9.7.5 1.5.8 2.4.8.7 0 1.4-.3 1.9-.7 1-.6 1.7-1.8 1.6-3-.3-1.7-1-3.4-2.1-4.7l-14-19.7zm30 11.1l9.1-7.2c1 1.2 2.3 2.1 3.7 2.6 2 .6 4.1.2 5.8-1.1 1.2-.8 2.2-1.9 2.6-3.3.6-1.8-.4-3.8-2.2-4.4-.3-.1-.6-.2-.9-.2-1.2-.1-3.3.4-6.4 1.7-5.1 2.1-9.1 2.9-12.1 2.6-2.9-.3-5.6-1.8-7.2-4.3-1.2-1.7-1.8-3.7-1.9-5.7 0-2.3.6-4.6 1.9-6.5 1.9-2.7 4.2-5 7-6.8 4.2-2.9 7.9-4.3 11.1-4.3 3.2 0 6.2 1.5 9 4.6l-9 7.1c-1.8-2.3-5.2-2.8-7.5-1l-.3.3c-1 .6-1.7 1.5-2.1 2.6-.3.8-.1 1.7.4 2.4.4.5 1 .9 1.7.9.8.1 2.2-.3 4.2-1.2 5-2.1 8.8-3.3 11.4-3.7 2.2-.4 4.5-.2 6.6.7 1.9.8 3.5 2.2 4.6 3.9 1.4 2 2.2 4.4 2.3 6.9.1 2.6-.6 5.1-2 7.3-1.8 2.7-4.1 5-6.8 6.8-5.5 3.8-10 5.4-13.6 4.8-3.9-.6-7.1-2.6-9.4-5.5z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const buttonElement = document.querySelector('.page-header__button');
+    const navigationElement = document.querySelector('.page-header__navigation');
+    buttonElement.addEventListener('click', () => {
+      navigationElement.classList.toggle('page-header__navigation--open')
+    }
+    );
+  </script>
+</body>
+
+</html>
