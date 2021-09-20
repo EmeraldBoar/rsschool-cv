@@ -1,1 +1,1 @@
-https://emeraldboar.github.io/rsschool-cv/cv
+https://emeraldboar.github.io/rsschool-cv/
